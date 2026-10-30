@@ -1,5 +1,3 @@
-# filepath: /ml-pipeline-project/ml-pipeline-project/src/pipelineml.py
-import pandas as pd
 from data_loader import load_data
 from data_preparation import prepare_data
 from model_trainer import train_model
