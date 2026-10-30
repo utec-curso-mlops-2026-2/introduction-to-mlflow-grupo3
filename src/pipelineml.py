@@ -1,3 +1,4 @@
+import pandas as pd
 from data_loader import load_data
 from data_preparation import prepare_data
 from model_trainer import train_model
@@ -13,7 +14,7 @@ def main():
     # Train model
     model, accuracy = train_model(X_train, y_train, X_test, y_test)
     n_estimators = model.n_estimators
-    model_name = "RandomForestClassifier"
+    model_name = "LightGBM"
 
     # Register model with MLflow
     register_model(model, model_name, n_estimators, accuracy)
